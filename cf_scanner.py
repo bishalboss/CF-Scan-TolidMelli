@@ -34,6 +34,19 @@ class CloudflareScanner:
         self.lock = threading.Lock()
         self.tested_count = 0
         self.total_ips = 0
+        self.output_file = config.get('output_file', 'working_ips')
+
+    def save_ip_realtime(self, result: Dict):
+        """Save a single working IP immediately to file"""
+        txt_filename = f"{self.output_file}.txt"
+        with open(txt_filename, 'a', encoding='utf-8') as f:
+            f.write(f"{result['ip']}\n")
+
+    def clear_output_file(self):
+        """Clear the output file at the start of a new scan"""
+        txt_filename = f"{self.output_file}.txt"
+        with open(txt_filename, 'w', encoding='utf-8') as f:
+            pass  # Just truncate the file
 
     def test_ip_http(self, ip: str) -> Optional[Dict]:
         """Test a single IP via HTTP/HTTPS with TLS SNI"""
@@ -173,6 +186,7 @@ class CloudflareScanner:
         if result:
             with self.lock:
                 self.results.append(result)
+                self.save_ip_realtime(result)  # Save immediately to file
                 print(f"✓ Found working IP: {result['ip']} - Latency: {result['latency_ms']}ms" +
                       (f" - Speed: {result.get('speed_kbps', 0):.2f} KB/s" if 'speed_kbps' in result else ""))
 
@@ -216,6 +230,10 @@ class CloudflareScanner:
             return []
 
         print(f"Total IPs to scan: {self.total_ips}\n")
+
+        # Clear previous results and start fresh
+        self.clear_output_file()
+        print(f"Saving working IPs to: {self.output_file}.txt (real-time)\n")
 
         # Start scanning
         start_time = time.time()
@@ -370,4 +388,5 @@ if __name__ == "__main__":
         main()
     except KeyboardInterrupt:
         print("\n\nScan interrupted by user!")
+        print("Working IPs found so far have been saved to working_ips.txt")
         sys.exit(0)
